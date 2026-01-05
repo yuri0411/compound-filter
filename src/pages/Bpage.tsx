@@ -1,10 +1,11 @@
-import { Filter } from "../features/Filter/Filter.tsx";
+import { FilterConfig } from "../features/Filter/FilterConfig.tsx";
+import { LOCATION_OPTIONS, RISKLEVEL_OPTIONS, STATUS_OPTIONS } from "../features/Filter/constans";
 
 const Bpage = () => {
   return (
     <div>
       <h1>config props 기반 — Filter demo</h1>
-      <Filter
+      <FilterConfig
         onSubmit={(data) => {
           console.log(data);
         }}
