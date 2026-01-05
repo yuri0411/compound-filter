@@ -1,7 +1,7 @@
 import { FilterConfig } from "../features/Filter/FilterConfig.tsx";
 import { LOCATION_OPTIONS, RISKLEVEL_OPTIONS, STATUS_OPTIONS } from "../features/Filter/constans";
 
-const Bpage = () => {
+const ConfigFilterDemo = () => {
   return (
     <div>
       <h1>config props 기반 — Filter demo</h1>
@@ -31,4 +31,4 @@ const Bpage = () => {
   );
 };
 
-export default Bpage;
+export default ConfigFilterDemo;

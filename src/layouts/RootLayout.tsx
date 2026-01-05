@@ -6,9 +6,9 @@ const RootLayout = () => {
     <div style={{ display: "flex", height: "100vh" }}>
       <Sidebar
         menus={[
-          { to: "/a", label: "Apage" },
-          { to: "/b", label: "Bpage" },
-          { to: "/c", label: "Cpage" },
+          { to: "/compound", label: "compound filter" },
+          { to: "/config", label: "config filter" },
+          { to: "/composite", label: "composite filter" },
         ]}
       />
       <div style={{ width: "100%", padding: 20 }}>

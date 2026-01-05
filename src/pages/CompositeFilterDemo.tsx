@@ -4,7 +4,7 @@ import { StatusFilterField } from "../features/Filter/fields";
 import { RiskLevelFilterField, RiskScoreFilterField } from "../features/Filter/fields";
 import { LOCATION_OPTIONS, RISKLEVEL_OPTIONS, STATUS_OPTIONS } from "../features/Filter/constans";
 
-const Cpage = () => {
+const CompositeFilterDemo = () => {
   return (
     <div>
       <h1>컴포넌트 합성 기반 — Filter demo</h1>
@@ -18,4 +18,4 @@ const Cpage = () => {
   );
 };
 
-export default Cpage;
+export default CompositeFilterDemo;

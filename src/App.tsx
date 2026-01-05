@@ -1,17 +1,17 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import Apage from "./pages/Apage.tsx";
-import Bpage from "./pages/Bpage.tsx";
-import Cpage from "./pages/Cpage.tsx";
+import ConfigFilterDemo from "./pages/ConfigFilterDemo.tsx";
+import CompositeFilterDemo from "./pages/CompositeFilterDemo.tsx";
+import CompoundFilterDemo from "./pages/CompoundFilterDemo.tsx";
 import RootLayout from "./layouts/RootLayout.tsx";
 
 function App() {
   return (
     <Routes>
       <Route element={<RootLayout />}>
-        <Route path="/" element={<Navigate to="/a" replace />} />
-        <Route path="/a" element={<Apage />} />
-        <Route path="/b" element={<Bpage />} />
-        <Route path="/c" element={<Cpage />} />
+        <Route path="/" element={<Navigate to="/compound" replace />} />
+        <Route path="/compound" element={<CompoundFilterDemo />} />
+        <Route path="/config" element={<ConfigFilterDemo />} />
+        <Route path="/composite" element={<CompositeFilterDemo />} />
       </Route>
     </Routes>
   );

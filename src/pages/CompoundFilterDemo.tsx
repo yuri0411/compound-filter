@@ -9,7 +9,7 @@ type FilterValues = {
   riskScore?: number;
 };
 
-const Apage = () => {
+const CompoundFilterDemo = () => {
   const [lastSubmitted, setLastSubmitted] = useState<FilterValues | null>(null);
 
   return (
@@ -44,4 +44,4 @@ const Apage = () => {
   );
 };
 
-export default Apage;
+export default CompoundFilterDemo;
