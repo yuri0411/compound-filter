@@ -8,6 +8,23 @@ const Bpage = () => {
         onSubmit={(data) => {
           console.log(data);
         }}
+        configs={[
+          {
+            type: "location",
+            options: LOCATION_OPTIONS,
+          },
+          {
+            type: "status",
+            options: STATUS_OPTIONS,
+          },
+          {
+            type: "riskLevel",
+            options: RISKLEVEL_OPTIONS,
+          },
+          {
+            type: "riskScore",
+          },
+        ]}
       />
     </div>
   );

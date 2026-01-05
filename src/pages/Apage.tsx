@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Filter } from "../features/Filter/Filter";
+import { LOCATION_OPTIONS, RISKLEVEL_OPTIONS, STATUS_OPTIONS } from "../features/Filter/constans";
 
 type FilterValues = {
   location: string[];
@@ -25,9 +26,9 @@ const Apage = () => {
           setLastSubmitted(data);
         }}
       >
-        <Filter.Status />
-        <Filter.Location />
-        <Filter.RiskLevel />
+        <Filter.Status options={STATUS_OPTIONS} />
+        <Filter.Location options={LOCATION_OPTIONS} />
+        <Filter.RiskLevel options={RISKLEVEL_OPTIONS} />
         <Filter.RiskScore />
       </Filter>
 

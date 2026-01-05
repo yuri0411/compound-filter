@@ -22,7 +22,7 @@ export const RiskScoreFilterField = () => {
     name: "riskLevel",
   });
 
-  const [min, max] = RISK_SCORE_RANGE[riskLevel];
+  const [min, max] = RISK_SCORE_RANGE[riskLevel ?? "LOW"];
 
   return (
     <div>
@@ -30,7 +30,6 @@ export const RiskScoreFilterField = () => {
       <Controller
         name="riskScore"
         control={control}
-        defaultValue={min}
         render={({ field }) => (
           <Input type="number" min={min} max={max} {...field} value={field.value ?? min} />
         )}

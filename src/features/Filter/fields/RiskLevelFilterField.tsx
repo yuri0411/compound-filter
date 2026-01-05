@@ -1,21 +1,18 @@
 import { useFormContext } from "react-hook-form";
 import { Radio } from "../../../components/Radio/Radio.tsx";
+import type { CheckboxItem } from "../../../components/CheckboxGroup/CheckboxGroup.tsx";
 
-export const RiskLevelFilterField = () => {
+interface RiskLevelFilterFieldProps {
+  options: CheckboxItem<string, string>[];
+}
+
+export const RiskLevelFilterField = ({ options }: RiskLevelFilterFieldProps) => {
   const { register } = useFormContext();
 
   return (
     <div>
       <h5>RiskLevel</h5>
-      <Radio
-        {...register("riskLevel")}
-        items={[
-          { value: "EXTREME", label: "매우 높음" },
-          { value: "HIGH", label: "높음" },
-          { value: "MODERATE", label: "중간" },
-          { value: "LOW", label: "낮음" },
-        ]}
-      />
+      <Radio {...register("riskLevel")} items={options} />
     </div>
   );
 };
