@@ -1,0 +1,28 @@
+.filterWrapper {
+    width: 300px;
+}
+
+.filterWrapper h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 16px 0 8px;
+}
+
+
+
+
+
+.submitBtn {
+    margin-top: 16px;
+    padding: 8px 12px;
+    background: lightgray;
+    border-radius: 8px;
+}
+
+.resetBtn {
+    margin-top: 16px;
+    padding: 8px 12px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
