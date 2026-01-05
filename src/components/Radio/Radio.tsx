@@ -3,8 +3,7 @@ import { forwardRef } from "react";
 
 type RadioProps = {
   name: string;
-  // value: string;
-  items: { label: string; value: string }[];
+  items: { id: string; name: string }[];
 };
 
 export const Radio = forwardRef<HTMLInputElement, RadioProps>(
@@ -12,17 +11,17 @@ export const Radio = forwardRef<HTMLInputElement, RadioProps>(
     return (
       <div>
         {items.map((item) => (
-          <label key={item.value} htmlFor={item.value} className={styles.label}>
+          <label key={item.id} htmlFor={item.id} className={styles.label}>
             <input
               name={name}
               ref={ref}
               type="radio"
-              id={item.value}
-              value={item.value}
+              id={item.id}
+              value={item.id}
               className={styles.radio}
               {...radioProps}
             />
-            {item.label}
+            {item.name}
           </label>
         ))}
       </div>
